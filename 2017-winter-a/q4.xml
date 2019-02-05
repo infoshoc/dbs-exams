@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE D [
+<!ELEMENT D (T*)>
+<!ATTLIST D name ID #REQUIRED>
+<!ELEMENT T (#PCDATA | E | T )*>
+<!ATTLIST T name ID #REQUIRED>
+<!ELEMENT E (#PCDATA)>
+<!ATTLIST E name ID #REQUIRED>
+]>
+<D name = "u0">
+ <T name = "u1">5</T>
+ <T name = "u2">6</T>
+ <T name = "u3"><E name = "u4">19</E></T>
+</D>

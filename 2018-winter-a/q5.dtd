@@ -1,0 +1,11 @@
+<!--a-->
+	<!ELEMENT a (b+)>
+	<!ELEMENT b (c, f?, d*, f)>
+	<!ELEMENT c (#PCDATA)>
+	<!ELEMENT d (#PCDATA)>
+	<!ELEMENT f (#PCDATA)>
+	<!ATTLIST d 
+	id ID #IMPLIED>
+	<!ATTLIST c
+	ref IDREF #REQUIRED
+	>

@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE a [
+<!ELEMENT a (b+)>
+<!ELEMENT b (c+,  d*, e)>
+<!ELEMENT c (#PCDATA)>
+<!ELEMENT d (#PCDATA)>
+<!ELEMENT e (#PCDATA)>
+<!ATTLIST e
+xid CDATA #REQUIRED
+id ID #REQUIRED
+>
+<!ATTLIST c
+xref CDATA #IMPLIED
+ref IDREF #IMPLIED
+>
+]>
+<a>
+<b>
+<c  ref="a1" xref="a2"> 2000 </c>
+<d> a1 </d>
+<d> a2 </d>
+<d> a3 </d>
+<d> a4 </d>
+<e id="a2" xid="a1"> </e>
+</b>
+<b>
+<c ref="a2" xref="a3"> 3000 </c>
+<d> b1 </d>
+<d> b2 </d>
+<d> b3 </d>
+<e id="a1" xid="a2"> </e>
+</b>
+<b>
+<c ref="a1" xref="a4"> 4000 </c>
+<e id="a3" xid="a1"> </e>
+</b>
+</a>

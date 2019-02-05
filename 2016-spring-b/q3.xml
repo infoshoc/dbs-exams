@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE D[
+<!ELEMENT D (R*)>
+<!ELEMENT R (T*)>
+<!ATTLIST R name CDATA #REQUIRED>
+<!ELEMENT T (A?, B?, C?)>
+<!ELEMENT A (#PCDATA)>
+<!ELEMENT B (#PCDATA)>
+<!ELEMENT C (#PCDATA)>
+]>
+<D>
+<R name="r1">
+<T><A>5</A><B>6</B></T>
+<T><A>4</A><B>9</B></T>
+<T><A>4</A><B>13</B></T>
+<T><A>7</A><B>62 </B></T>
+<T><A>16</A><B> </B></T>
+</R>
+<R name="r2">
+<T><B>5</B><C>16</C></T>
+<T><B>6</B><C>99</C></T>
+<T><B>6</B><C>113</C></T>
+<T><B>7</B><C>11</C></T>
+</R>
+</D>
+

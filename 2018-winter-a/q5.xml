@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE a SYSTEM "q5.dtd">
+<a>
+<b>
+<c ref="a5">2000</c>
+<d id="a3">3</d>
+<d id="a4">4</d>
+<d id="a5">a</d>
+<d id="a6">b</d>
+<f></f>
+</b>
+<b>
+<c ref="a5">3000</c>
+<f></f>
+<d id="a7">7</d>
+<d id="a8">8</d>
+<d id="a9">9</d>
+<f></f>
+</b>
+<b>
+<c ref="a6">4000</c>
+<f></f>
+</b>
+</a>

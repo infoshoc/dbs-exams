@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE courses [
+	<!ELEMENT courses (faculty*)>
+	<!ELEMENT faculty (course+)>
+		<!ATTLIST faculty name CDATA #REQUIRED>
+	<!ELEMENT course (prereq?,lecturer+)>
+		<!ATTLIST course number ID #REQUIRED
+				   name CDATA #IMPLIED					
+				   grad (yes|no) "no"				 
+		>			
+	<!ELEMENT prereq EMPTY>
+		<!ATTLIST prereq prenum IDREF #REQUIRED>
+	<!ELEMENT lecturer (#PCDATA)>
+
+]>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE countries [
+<!ELEMENT countries (country*)>
+<!ELEMENT country (name,population?,city*)>
+<!ATTLIST country continent CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT city (name)>
+<!ATTLIST city capital (yes|no) 'no'>
+<!ELEMENT population (#PCDATA)>
+<!ATTLIST population year CDATA #IMPLIED>
+<!ENTITY eu "Europe">
+<!ENTITY as "Asia">
+<!ENTITY at 'Africa'>
+<!ENTITY am "America">
+<!ENTITY au 'Ausualia'>
+
+]>
+
+<countries>
+<country continent="&as;">
+	<name>Israel</name>
+<population year='2001'>6199008</population>
+<city capital='yes'><name>Jerusalem</name></city>
+<city><name>Ashdod</name></city>
+<city><name>Haifa</name></city>
+<city><name>Eilat</name></city>
+</country>
+<country continent="&eu;">
+	<name>France</name>
+	<population year='2004'>60424213</population>
+	<city capital='yes'><name>Paris</name></city>
+	<city><name>Nancy</name></city>
+	<city><name>Nice</name></city>
+	<city><name>Lyon</name></city>
+</country>
+</countries>
+

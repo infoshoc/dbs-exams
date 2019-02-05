@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE a [
+<!ELEMENT a (b*)> 
+<!ELEMENT b (c, d*)> 
+<!ELEMENT c (#PCDATA)> 
+<!ELEMENT d (#PCDATA)>
+]>
+
+<a>
+ <b>
+   <c>2000</c>  
+   <d>5</d> 
+   <d>6</d>
+ </b>
+ <b>
+   <c>3000</c>  
+   <d>7</d>
+ </b>
+ <b>
+   <c>4000</c> 
+ </b>         
+</a>
